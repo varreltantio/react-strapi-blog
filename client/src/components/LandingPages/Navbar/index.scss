@@ -1,0 +1,136 @@
+.navbar-landing-page {
+  position: relative;
+  z-index: 99;
+
+  .active {
+    right: 0 !important;
+  }
+
+  .navbar-collapse {
+    @media only screen and (max-width: 991px) {
+      position: fixed;
+      right: -350px;
+      transition: all 0.5s ease 0s;
+      z-index: 999;
+      width: 350px;
+      background: #fff;
+      overflow-y: scroll;
+      height: 100vh;
+      top: 0;
+      padding: 0;
+
+      &::-webkit-scrollbar-track {
+        background-color: #dfdfdfc5;
+      }
+
+      &::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: #737272;
+        border: 1px solid #b1b1b1;
+      }
+    }
+
+    .btn-back {
+      display: none;
+
+      @media only screen and (max-width: 991px) {
+        display: block;
+        width: 100%;
+        padding: 20px;
+        border-bottom: 1px solid #dddddd;
+      }
+
+      h5 {
+        text-align: right;
+        font-size: calc(18px + (20 - 18) * ((100vw - 300px) / (1920 - 300)));
+        font-weight: 500;
+        cursor: pointer;
+      }
+    }
+
+    .navbar-nav {
+      padding: 15px;
+
+      .nav-item {
+        margin-right: 45px;
+        position: relative;
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+          margin-right: 30px;
+        }
+
+        @media only screen and (max-width: 991px) {
+          margin: 0;
+
+          .dropdown-menu {
+            -webkit-transition: all 0.9s;
+            -moz-transition: all 0.9s;
+            -ms-transition: all 0.9s;
+            -o-transition: all 0.9s;
+            transition: all 0.9s;
+            max-height: 0;
+            display: block;
+            overflow: hidden;
+            opacity: 0;
+            border: hidden;
+          }
+
+          .show {
+            max-height: 300px;
+            opacity: 1;
+          }
+        }
+
+        @media only screen and (min-width: 1199px) {
+          &:hover .dropdown-menu {
+            display: block;
+          }
+        }
+
+        .nav-link {
+          font-size: 14px;
+          font-weight: 600;
+          text-transform: uppercase;
+          color: #fff !important;
+          -webkit-transition: all 0.3s ease-out 0s;
+          -moz-transition: all 0.3s ease-out 0s;
+          -ms-transition: all 0.3s ease-out 0s;
+          -o-transition: all 0.3s ease-out 0s;
+          transition: all 0.3s ease-out 0s;
+          padding: 10px 0;
+          position: relative;
+          font-family: "Poppins", sans-serif;
+          cursor: pointer;
+
+          @media only screen and (max-width: 991px) {
+            display: block;
+            padding: 4px 0;
+            color: #2e2e2e !important;
+          }
+
+          .icon-dropdown {
+            right: -18px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+
+            @media only screen and (max-width: 991px) {
+              right: 0;
+            }
+          }
+        }
+
+        .dropdown-menu {
+          cursor: pointer;
+
+          .dropdown-item {
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+  }
+}

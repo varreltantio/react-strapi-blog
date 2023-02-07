@@ -1,0 +1,141 @@
+.detail-article {
+  justify-content: center;
+  display: flex;
+
+  .item {
+    margin: 0 64px;
+
+    @media only screen and (min-width: 728px) and (max-width: 903.98px) {
+      margin: 0 48px;
+    }
+
+    @media only screen and (max-width: 727.98px) {
+      margin: 0 24px;
+    }
+
+    max-width: 680px;
+    width: 100%;
+    min-width: 0;
+
+    .title {
+      text-align: center;
+      font-size: 48px;
+      font-family: fell, Georgia, Cambria, "Times New Roman", Times, serif;
+      margin: 50px 0;
+    }
+
+    .datePublished {
+      display: inline-block;
+      margin-left: -4rem;
+      margin-bottom: 50px;
+      padding: 0.25rem 1rem 0.25rem 4rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      line-height: 1.25rem;
+      letter-spacing: 0.025em;
+      text-transform: uppercase;
+      --tw-text-opacity: 1;
+      color: rgba(255, 255, 255, var(--tw-text-opacity));
+      border-top-right-radius: 9999px;
+      border-bottom-right-radius: 9999px;
+      --tw-bg-opacity: 1;
+      background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+    }
+
+    .thumbnail {
+      height: auto;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .description {
+      margin-top: 100px;
+
+      @media only screen and (max-width: 727.98px) {
+        font-size: 18px;
+      }
+
+      font-size: 21px;
+      font-family: charter, Georgia, Cambria, "Times New Roman", Times, serif;
+      letter-spacing: -0.003em;
+      line-height: 32px;
+
+      img {
+        height: auto;
+        max-width: 100%;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.related-post {
+  margin-top: 100px;
+  margin-bottom: 350px;
+
+  .line-label {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+
+    &::before {
+      z-index: 1;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background: #e0e0e0e0;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin-top: -1px;
+    }
+
+    h1 {
+      position: relative;
+      margin: 0;
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 22px;
+      font-weight: 500;
+      z-index: 1;
+      background: #fff;
+      padding: 0 10px;
+    }
+  }
+
+  .detail-post {
+    .item {
+      display: block;
+      float: left;
+      width: 24%;
+      height: auto;
+      padding: 0;
+      position: relative;
+      margin: 0 0.5%;
+      overflow: hidden;
+
+      .content {
+        text-decoration: none;
+        color: inherit;
+
+        img {
+          @media only screen and (max-width: 768px) {
+            height: 100px;
+          }
+          height: 200px;
+          border-radius: 5px;
+          max-width: 100%;
+          margin-bottom: 10px;
+        }
+
+        h1 {
+          font-size: 18px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

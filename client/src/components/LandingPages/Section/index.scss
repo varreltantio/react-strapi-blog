@@ -1,0 +1,47 @@
+.line {
+  background: linear-gradient(#7a84ff 0%, #6e8dfe 100%);
+  width: 150px;
+  height: 5px;
+  margin-bottom: 10px !important;
+}
+
+.text-desc {
+  @media only screen and (min-width: 1200px) {
+    font-size: 16px;
+    padding: 0 250px;
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    font-size: 16px;
+    padding: 0 150px;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    font-size: 14px;
+    padding: 0 100px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 12px;
+    padding: 0 40px 10px 40px;
+  }
+
+  font-weight: 400;
+}
+
+.scroll-top {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  z-index: 10;
+  color: #fff;
+  text-align: center;
+  background: #7a84ff;
+  border-radius: 100%;
+  font-size: 22px;
+  cursor: pointer;
+  line-height: 2.2;
+  border: 1px solid #fff;
+}

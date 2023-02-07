@@ -1,0 +1,67 @@
+.blog-list {
+  .blog-item {
+    margin-bottom: 30px;
+
+    .blog-card {
+      border: 1px solid #f3f3f3;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      filter: drop-shadow(0 0 10px #eee);
+      transition: all 0.3s;
+
+      .blog-thumbnail {
+        border: 1px solid #f3f3f3;
+      }
+
+      .blog-content {
+        position: relative;
+        display: block;
+        padding: 15px;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex-direction: column;
+
+        .blog-info {
+          padding: 0 !important;
+
+          .datePublished {
+            margin-bottom: 10px;
+
+            .icon {
+              font-size: 14px;
+              margin-right: 10px;
+              color: #595959;
+            }
+
+            span {
+              color: #595959;
+              font-weight: 400;
+              font-size: 14px;
+            }
+          }
+
+          .title {
+            text-transform: none;
+            font-size: 21px;
+            font-weight: 700;
+            color: #000;
+            text-decoration: none;
+            transition: all 0.5s;
+
+            &:hover {
+              color: #7a84ff;
+            }
+          }
+
+          .description {
+            p {
+              color: #595959;
+            }
+          }
+        }
+      }
+    }
+  }
+}

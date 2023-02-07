@@ -1,0 +1,25 @@
+.item-category {
+  position: relative;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+
+  a {
+    color: #000;
+    text-decoration: none;
+
+    span {
+      transition: all 0.5s;
+      margin-left: 15px;
+      font-weight: 500;
+      text-transform: capitalize;
+    }
+
+    &:hover {
+      color: #7a84ff;
+
+      span {
+        margin-left: 25px;
+      }
+    }
+  }
+}

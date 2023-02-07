@@ -1,0 +1,134 @@
+.jumbotron-blogs {
+  background-image: url(../../assets/blog/jumbotron.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+  overflow: hidden;
+  margin-top: -100px;
+  position: relative;
+
+  .search {
+    margin-top: 200px;
+
+    .search-box {
+      width: fit-content;
+      height: fit-content;
+      position: relative;
+    }
+
+    .input-search {
+      height: 50px;
+      width: 50px;
+      border-style: none;
+      padding: 10px;
+      font-size: 18px;
+      letter-spacing: 2px;
+      outline: none;
+      border-radius: 25px;
+      transition: all 0.5s ease-in-out;
+      background-color: #22a6b3;
+      padding-right: 40px;
+      color: #fff;
+    }
+
+    .input-search::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 18px;
+      letter-spacing: 2px;
+      font-weight: 100;
+    }
+
+    .btn-search {
+      width: 50px;
+      height: 50px;
+      border-style: none;
+      font-size: 20px;
+      font-weight: bold;
+      outline: none;
+      cursor: pointer;
+      border-radius: 50%;
+      position: absolute;
+      right: 0px;
+      color: #ffffff;
+      background-color: transparent;
+      pointer-events: painted;
+    }
+
+    .btn-search:focus ~ .input-search {
+      width: 300px;
+      border-radius: 0px;
+      background-color: transparent;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+    }
+
+    .input-search:focus {
+      width: 300px;
+      border-radius: 0px;
+      background-color: transparent;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+    }
+  }
+
+  .info {
+    text-align: center;
+    color: #fff;
+  }
+
+  .list-search {
+    text-align: center;
+    margin-top: 8px;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      transition: all 0.5s ease;
+
+      &:hover {
+        color: #cecece;
+      }
+    }
+  }
+}
+
+.blog-sidebar {
+  padding: 70px 0;
+
+  .blog-category {
+    @media only screen and (max-width: 991px) {
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px dotted #dbdbdb;
+    }
+
+    .header {
+      .title {
+        position: relative;
+        text-transform: uppercase;
+        color: #000;
+        letter-spacing: 1px;
+        font-weight: 600;
+        line-height: 1;
+      }
+
+      .line {
+        width: 50px;
+        margin-bottom: 30px !important;
+      }
+    }
+
+    .list {
+      margin-bottom: 30px;
+      display: inline-block;
+      width: 100%;
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+}

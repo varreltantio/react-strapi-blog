@@ -1,0 +1,103 @@
+.section-theme {
+  margin-top: 150px;
+  padding-bottom: 58px;
+  background-image: url("../../../../assets/bg-section-theme.png");
+
+  h3 {
+    color: #fff;
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+
+  .owl-dots {
+    margin-bottom: 10px;
+  }
+
+  .btn-custom {
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 14px 35px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 50px;
+    transition: 0.5s;
+
+    &:hover {
+      color: #7a84ff;
+      background-color: #fff;
+    }
+  }
+
+  .demo-theme {
+    position: relative;
+    margin-bottom: 40px;
+
+    .preview {
+      display: block;
+      padding: 0 20px;
+      overflow: hidden;
+
+      &:hover .layout .layout-container {
+        background-position: center 100% !important;
+        transition: 10s;
+      }
+
+      .layout {
+        width: 100%;
+        height: 500px;
+        background-image: url("../../../../assets/theme/header.jpg");
+        display: inline-block;
+        position: relative;
+        background-repeat: no-repeat;
+        box-shadow: 0 0 10px 0 #5b5b5b;
+        padding-top: 15px;
+        background-color: #fff;
+        border-radius: 5px;
+
+        .image-1 {
+          background: url("../../../../assets/theme/1.png");
+        }
+
+        .image-2 {
+          background: url("../../../../assets/theme/2.png");
+        }
+
+        .image-3 {
+          background: url("../../../../assets/theme/3.png");
+        }
+
+        .image-4 {
+          background: url("../../../../assets/theme/4.png");
+        }
+
+        .image-5 {
+          background: url("../../../../assets/theme/5.png");
+        }
+
+        .image-6 {
+          background: url("../../../../assets/theme/6.png");
+        }
+
+        .image-7 {
+          background: url("../../../../assets/theme/7.png");
+        }
+
+        .image-8 {
+          background: url("../../../../assets/theme/8.png");
+        }
+
+        .image-9 {
+          background: url("../../../../assets/theme/9.png");
+        }
+
+        .layout-container {
+          background-size: cover;
+          background-repeat: no-repeat;
+          height: 100%;
+          width: 100%;
+          transition: 10s;
+        }
+      }
+    }
+  }
+}
